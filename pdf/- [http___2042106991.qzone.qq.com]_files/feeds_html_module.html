@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<!-- saved from url=(0363)https://user.qzone.qq.com/proxy/domain/ic2.qzone.qq.com/cgi-bin/feeds/feeds_html_module?g_iframeUser=1&i_uin=2042106991&i_login_uin=3271341746&mode=4&previewV8=1&style=8&version=8&needDelOpr=true&transparence=true&hideExtend=false&showcount=5&MORE_FEEDS_CGI=http%3A%2F%2Fic2.s51.qzone.qq.com%2Fcgi-bin%2Ffeeds%2Ffeeds_html_act_all&refer=2&paramstring=os-winxp|100 -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>个人中心feeds</title>
+<!--<base href="//qzs.qq.com/">--><base href=".">
+<script>
+  document.domain=location.hostname;
+</script>
+<!--[if IE]>
+<script type="text/javascript">
+    function toAbsURL(s) { 
+     var l = location, h, p, f, i; 
+     if (/^\w+:/.test(s)) { 
+       return s; 
+     } 
+     h = l.protocol + '//' + l.host + (l.port!=''?(':' + l.port):''); 
+     if (s.indexOf('/') == 0) { 
+       return h + s; 
+     } 
+     p = l.pathname.replace(/\/[^\/]*$/, ''); 
+     f = s.match(/\.\.\//g); 
+     if (f) { 
+       s = s.substring(f.length * 3); 
+       for (i = f.length; i--;) { 
+         p = p.substring(0, p.lastIndexOf('/')); 
+       } 
+     } 
+     return h + p + '/' + s; 
+   }
+
+
+    var base = document.getElementsByTagName('base')[0];
+    base.href = toAbsURL(base.href);
+</script>
+<![endif]-->
+<script type="text/javascript">
+var QZONE = {};
+var QZFL = {};
+QZFL.event = {};
+QZFL.event.getEvent = function (evt) {
+	var evt = window.event || evt,
+		c, cnt;
+	if (!evt && window.Event) {
+		c = arguments.callee;
+		cnt = 0;
+		while (c) {
+			if ((evt = c.arguments[0]) && typeof (evt.srcElement) != "undefined") {
+				break;
+			} else if (cnt > 9) {
+				break;
+			}
+			c = c.caller;
+			++cnt;
+		}
+	}
+	return evt;
+};
+QZFL.event.getTarget = function (evt) {
+	var e = QZFL.event.getEvent(evt);
+	if (e) {
+		return e.srcElement || e.target;
+	} else {
+		return null;
+	}
+};
+QZFL.media = {};
+var QZFF_M_img_ribr = [];
+QZFL.media.reduceImgByRule = function (ew, eh, opts, cb) {
+	QZFF_M_img_ribr.push(QZFL.event.getTarget());
+};
+QZFL.media.adjustImageSize = function (w, h, trueSrc, cb, errCallback) {
+	QZFF_M_img_ribr.push(QZFL.event.getTarget());
+};
+QZFL.media.reduceImage = function () {
+	QZFF_M_img_ribr.push(QZFL.event.getTarget());
+};
+QZFL.media.smartImage = function () {
+	QZFF_M_img_ribr.push(QZFL.event.getTarget());
+};
+
+function restXHTML(s) {
+	return s.replace(/&amp;|&lt;|&gt;|&apos;|&#0?39;|&quot;/g, function (a) {
+		switch (a) {
+		case "&amp;":
+			return "&";
+		case "&lt;":
+			return "<";
+		case "&gt;":
+			return ">";
+		case "&apos;":
+		case "&#39;":
+		case "&#039;":
+			return "\x27";
+		case "&quot;":
+			return "\x22";
+		}
+	});
+}
+</script>
+<script type="text/javascript">
+	var _s_=new Date();
+	var _re = document.referrer,
+		exp = /^https?:\/\/(([\d\w-]+)(?:\.s\d\d?)?\.)?([\d\w-]+)(?:\.s\d\d?)?\.(qzone|pengyou)\.qq\.com/i,
+		exp2 =  /^https?:\/\/([a-zA-Z0-9\-]+)?\.?(qzs|imgcache)\.qq\.com[\/]*#?/i;
+
+	var G_Param,
+		g_sid,
+		g_imgd,
+		g_wd,
+		g_rd,
+		g_V;
+	if(exp.test(_re)||exp2.test(_re)){
+		document.domain=location.hostname;
+		g_sid = parent.siDomain || parent.parent.siDomain || "qzonestyle.gtimg.cn";
+		g_sid = g_sid.replace("http://","").replace('https://', '');
+		g_imgd = parent.imgcacheDomain || parent.parent.siDomain || "imgcache.qq.com";
+
+		g_DPrefix = parent.g_DPrefix || parent.parent.g_DPrefix || "";
+		g_rd = "r."+g_DPrefix+"qzone.qq.com";
+		g_wd = "w."+g_DPrefix+"qzone.qq.com";
+		g_imgd = g_imgd.replace("http://","").replace('https://', '');
+		g_V = parent.g_V || parent.parent.g_V || {
+			"qz":"_2.0.7.8"
+		};
+	}else{
+		window.OUTSIDE_DOMAIN = true;
+		g_sid = "qzonestyle.gtimg.cn";
+		g_imgd = "imgcache.qq.com";
+		g_rd = "r.qzone.qq.com";
+		g_wd = "w.qzone.qq.com";
+		g_V = {
+			"qz":"_2.0.7.8"
+		};
+	}
+	if(!/\/$/.test(g_sid)){
+		g_sid+="/";
+	}
+	function commonDictionarySplit(s, esp, vq, eq) {
+			var res = {};
+			if(!s || typeof(s) != "string"){
+				return res;
+			}
+			if (typeof(esp) != 'string') {
+				esp = "&";
+			}
+			if (typeof(vq) != 'string') {
+				vq = "";
+			}
+			if (typeof(eq) != 'string') {
+				eq = "=";
+			}
+
+			var l = s.split(vq + esp),
+				len = l.length,
+				tmp,
+				t = eq + vq,
+				p;
+
+			if(vq){
+				tmp = l[len - 1].split(vq);
+				l[len - 1] = tmp.slice(0, tmp.length - 1).join(vq);
+			}
+
+			for (var i = 0, len; i < len; i++) {
+				if(eq){
+					tmp = l[i].split(t);
+					if (tmp.length > 1) {
+						res[tmp[0]] = tmp.slice(1).join(t);
+						continue;
+					}
+				}
+				res[l[i]] = true;
+			}
+			return res;
+		}
+
+		var _jsBegin='<script type="text/javascript" charset="utf-8" src="',
+			_jsEnd='"><\/script>',
+			cssBegin = '<link rel="stylesheet" rev="stylesheet" href="',
+			cssEnd = '" type="text/css" media="screen"/>';
+
+		G_Param = commonDictionarySplit(location.search.substring(1),"&");
+		if(!G_Param){
+			G_Param = frameElement.G_Param || {};
+		}
+		var G_Param_map = {
+			hideExtend: true,
+			style: 100,
+			DEFAULT_FEEDS_CGI: window.location.protocol+ "//rsh.qzone.qq.com/cgi-bin/feeds/feeds_html_act_all",
+			i_uin: window.OUTSIDE_DOMAIN?0:(parent.g_iUin||parent.parent.g_iUin||0),
+			i_login_uin: window.OUTSIDE_DOMAIN?0:(parent.g_iLoginUin||parent.parent.g_iLoginUin||0),
+			mode: 3,
+			noOpr: true,
+			view: 1,
+			scope: 0,
+			filter: "all",
+			max: -1,
+			heightHack: parseInt(G_Param.heightHack, 10),
+			errmsg: "主人最近比较忙，没有公开的空间更新。",
+			PV_ACT_DOMAIN: "ic2act",
+			PV_DOMAIN: "ic2",
+			showbbor:false,/*是否显示分割线条*/
+			showcount:10,/*每次显示条数*/
+			showmore:false,/*是否显示更多按钮*/
+			version:5/*v5还是v6,默认是v5*/
+		};
+
+var _feedsdata = {
+	"code" : '',
+	"subcode" : '',
+	"message" : '',
+	"default" : '',
+	"data":{
+		main : {
+			attach:'',
+			searchtype :'',
+			needFold:'',
+			icServerTime:'',
+			icView:'',
+			daylist:'',
+			uinlist:'',
+			hasMoreFeeds_0:true,
+			foldAllHostBTNClass:'',
+			foldAllHostBTNTitle:'',
+			foldAllHostFeedDisplay:'',
+			friend_more:'',
+			host_more:'',
+			aboutHostFeeds_new_cnt:'',
+			replyHostFeeds_new_cnt:'',
+			myFeeds_new_cnt:'',
+			friendFeeds_new_cnt:'',
+			newfeeds_uinlist:'',
+			newfeeds_uinlist_more:'',
+			newfeeds_special_cnt:'',
+			newfeeds_friend_cnt:'',
+			newfeeds_follow_cnt:'',
+			newfeeds_group_cnt:'',
+			tips:'',
+			feedstips:'',
+			js_showtips:'',
+			lastaccesstime:'',
+			lastAccessRelateTime:'',
+			QzoneFeedsKey:'',
+			offset:'10',
+			total_number:'11'
+		},
+		firstpage_data:[
+			
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b8792caee160c6f40b00',
+				flag:'0',
+				dataonly:'0',
+				feedno:'0',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1625402924',
+				feedstime:'7月4日 20:48',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b8793c5e5a61f6940b00',
+				flag:'0',
+				dataonly:'0',
+				feedno:'1',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633312316',
+				feedstime:' 09:51',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b879fcbd596149db0100',
+				flag:'0',
+				dataonly:'0',
+				feedno:'2',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633271291',
+				feedstime:'昨天 22:28',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b8792467596137310e00',
+				flag:'0',
+				dataonly:'0',
+				feedno:'3',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633249070',
+				feedstime:'昨天 16:17',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b879b8515961075d0900',
+				flag:'0',
+				dataonly:'0',
+				feedno:'4',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633243576',
+				feedstime:'昨天 14:46',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'5',
+				key:'6f14b8797018596103cd0800',
+				flag:'0',
+				dataonly:'0',
+				feedno:'5',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633228912',
+				feedstime:'昨天 10:41',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b87945185961837f0b00',
+				flag:'0',
+				dataonly:'0',
+				feedno:'6',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633228869',
+				feedstime:'昨天 10:41',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b879806258613cbb0300',
+				flag:'0',
+				dataonly:'0',
+				feedno:'7',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633182336',
+				feedstime:'前天 21:45',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b87972625861b8d40100',
+				flag:'0',
+				dataonly:'0',
+				feedno:'8',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633182322',
+				feedstime:'前天 21:45',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b8794e6058613b6c0e00',
+				flag:'0',
+				dataonly:'0',
+				feedno:'9',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633181774',
+				feedstime:'前天 21:36',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+			{
+				ver:'1',
+				appid:'311',
+				typeid:'0',
+				key:'6f14b879e907576121730100',
+				flag:'0',
+				dataonly:'0',
+				feedno:'10',
+				title:'',
+				summary:'',
+				appiconid:'311',
+				clscFold:'icenter_list_extend',
+				abstime:'1633093608',
+				feedstime:'10月1日 21:06',
+				userHome:'http://user.qzone.qq.com/2042106991',
+				namecardLink:'nameCard_2042106991',
+				ouin:'',
+				uin:'2042106991',
+				foldFeed:'',
+				foldFeedTitle:'',
+				showEbtn:'',
+				scope:'0',
+				hideExtend:'',
+				nickname:'是芷绮鸭',
+				remark:'',
+				type:'',
+				vip:'novip',
+				info_user_name:'',
+				logimg:'http://qlogo4.store.qq.com/qzone/2042106991/2042106991/50?1631539903',
+				bor:'',
+				lastFeedBor:'',
+				list_bor2:'',
+				info_user_display:'',
+				upernum:'',
+				oprType:'0',
+				moreflag:'',
+				otherflag:'0_0_0_0_0_0_0',
+				sameuser:{},
+				uper_isfriend:[],
+				uperlist:[]
+		},
+		
+		undefined
+		]
+	}
+};
+
+for(var k in G_Param_map){
+	if(typeof(G_Param[k])=="undefined"){
+		G_Param[k] = G_Param_map[k];
+	}
+}
+if ((G_Param.style + "").indexOf("v6/") == 0){
+	G_Param.version = 6;
+	G_Param.style = (G_Param.style + "").replace("v6/", "");
+}
+if(G_Param.MORE_FEEDS_CGI){
+	G_Param.MORE_FEEDS_CGI = decodeURIComponent(G_Param.MORE_FEEDS_CGI);
+}
+
+/*这里特殊默认值的判断*/
+if(typeof(G_Param.hideExtend)=="string"){
+	G_Param.hideExtend = (G_Param.hideExtend != "false");
+}
+
+if(typeof(G_Param.mode)=="undefined"||isNaN(parseInt(G_Param.mode,10))){
+	G_Param.mode = 1;
+}
+
+if(typeof(G_Param.style)=="undefined"||isNaN(parseInt(G_Param.style,10))){
+	G_Param.style = 100;
+}else{
+	G_Param.style = parseInt(G_Param.style,10);
+}
+
+G_Param.CSSQueue = [];
+if(G_Param.version == 8){
+	G_Param.CSSQueue.push([
+		cssBegin,window.location.protocol , '//', g_sid,'aoi/skin/',G_Param.style, '.css" id="qz_skin_style', cssEnd
+	].join(""));
+} else if (G_Param.version == 6){
+	G_Param.CSSQueue.push(([cssBegin, window.location.protocol , '//', g_sid,'qzone_v6/gb/skin/',G_Param.style,'.css',cssEnd]).join(""));
+}
+
+if(typeof(G_Param.needDelOpr)=="string"){
+	G_Param.needDelOpr = (G_Param.needDelOpr != "false");
+}
+var tmp_begin = '<li class="f_single imgBlock bor2"><div class="f_aside imgBlock_img"><qz:user param=\'<%userHome%>|<%logimg%>|<%namecardLink%>|<%info_user_name%>||<%vip%>|<%type%>|<%uin%>|<%ouin%>|<%otherflag%>\' nick=\'<%nickname%>\'></qz:user></div><div class="f_wrap imgBlock_ct">',
+	tmp_end = '</div></li>',
+	host_tmp = '<div class="f_item" link="0" id="feed_<%uin%>_<%appid%>_<%typeid%>_<%abstime%>_<%feedno%>_<%scope%>_<%ver%>" ><div class="f_info"><a target="_blank" href="http://'+location.hostname+'/<%uin%>/profile" class="nickname q_namecard c_tx q_des ui_mr5" link="nameCard_<%uin%> des_<%uin%>"><%nickname%></a><%famouslogo%><%title%></div><div class="qz_summary" id="hex_<%appid%>_<%abstime%>_<%uin%>_<%scope%>"><%summary%></div><div class="f_op" id="opr_<%uin%>_<%appid%>_<%typeid%>_<%abstime%>_<%feedno%>"><qz:fo class="<%foldFeed%>" title="<%foldFeedTitle%>" param="<%appid%>|<%abstime%>|<%ouin%>|<%typeid%>|<%feedno%>|<%feedstime%>|<%showEbtn%>|<%scope%>|<%oprType%>|<%key%>|<%otherflag%>|<%rightflag%>|<%ver%>"></qz:fo></div></div>',
+	friend_tmp = '<div class="f_item" link="1" id="feed_<%uin%>_<%appid%>_<%typeid%>_<%abstime%>_<%feedno%>_<%scope%>_<%ver%>" ><div class="f_info"><a target="_blank" href="http://'+location.hostname+'/<%uin%>/profile" class="nickname q_namecard c_tx q_des ui_mr5" link="nameCard_<%uin%> des_<%uin%>"><%nickname%></a><%famouslogo%><%title%></div><div class="qz_summary" id="hex_<%appid%>_<%abstime%>_<%uin%>_<%scope%>"><%summary%></div><div class="f_op"  '+(G_Param.hideExtend?'style="display:none"':'')+' id="opr_<%uin%>_<%appid%>_<%typeid%>_<%abstime%>_<%feedno%>"><qz:fo class="<%foldFeed%>" title="<%foldFeedTitle%>" param="<%appid%>|<%abstime%>|<%uin%>|<%typeid%>|<%feedno%>|<%feedstime%>|<%showEbtn%>|<%scope%>|<%oprType%>|<%key%>|<%otherflag%>|<%rightflag%>|<%ver%>"></qz:fo></div></div>';
+
+var _cssSuffix = '';
+if (top.window.g_isGrayRelease) {
+	_cssSuffix = '-v9';
+}
+var coreCSSQueue = [
+	cssBegin,'https://qzonestyle.gtimg.cn/qzone_v5/app/app_icon.css',cssEnd,/*TODO 这个样式是不是需要去掉?*/
+	cssBegin,'https://qzonestyle.gtimg.cn/',('aoi/old-feed'+_cssSuffix+'.css'),cssEnd,
+	cssBegin,'https://qzonestyle.gtimg.cn/',('aoi/feed-home'+_cssSuffix+'.css'),cssEnd
+];
+coreCSSQueue = coreCSSQueue.concat(G_Param.CSSQueue);
+
+document.write(coreCSSQueue.join(''));
+</script><link rel="stylesheet" rev="stylesheet" href="./app_icon.css" type="text/css" media="screen"><link rel="stylesheet" rev="stylesheet" href="./old-feed-v9.css" type="text/css" media="screen"><link rel="stylesheet" rev="stylesheet" href="./feed-home-v9.css" type="text/css" media="screen"><link rel="stylesheet" rev="stylesheet" href="./8(2).css" id="qz_skin_style" type="text/css" media="screen">
+
+
+
+<link rev="stylesheet" rel="stylesheet" type="text/css" media="screen" href="./qz-tips-box.css"></head>
+
+	
+	
+	
+	
+
+
+
+<body class="ifeeds_body os-winxp mode_bg_opacity100" data-opacity="100" onload="bodyonload();" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="" style="">
+<div class="ifeeds feed feed-v9 feed-home" id="ifeedsContainer">
+
+	<div id="ifeedsMode" class="feed_avaIcon_4 feed-inner feeds_style_4">
+		<ul id="host_home_feeds">                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1625402924_0_1"><div class="f-single-top" data-istop="1">    <i class="fui-icon icon-fixed-top"></i>置顶</div><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">7月4日 20:48</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1625402924_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b8792caee160c6f40b00" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info qz_info_cut">这是一条置顶/扩列saysay<br>你好，这里尚筱/Emilia，现役国际班女高中生<br>已经有饲养员啦 要是恋爱的话请勿dd我<br>140斤肥宅/斯莱特林优秀毕业生/F杯巨乳+糙汉音复杂混合体/四分之一个漫威人/P大木苏里死忠粉/恐怖游戏资深玩家/上B站大部分时间都在看纪录片游戏区音乐区的假二次元/家里没几套存货的汉服娘/[em]e400115[/ <a href="javascript:;" data-cmd="qz_toggle" data-pos="1">展开全文</a><img src="./loading.gif" class="load_img none"></div><div class="f-info qz_info_complete none"></div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1625402924_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b8792caee160c6f40b00" data-tid="6f14b8792caee160c6f40b00" data-uin="2042106991" data-origfkey="" data-origtid="6f14b8792caee160c6f40b00" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="1" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiII4N5EQghzzo!6w9VxF!ZaGsbpk93xxkc2so!kWj76mmNClhKfrWe8xTki44xX4D0w4N5EQghzzo!6w9VxF!ZaGmngIJvkYOhXWgjcZZLkidVNTO4vkR/GTSRR9qzp2sbEWN7lfMahyJt3Z1ZQVA0EG!67jTeziMc4MzAkbzg1AwLKfK40wk39sF/CGkbzIHmx_" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-feedstype="100" data-abstime="1625402924" data-iswupfeed="1" data-platformid="52" data-accessright="1" data-istop="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg   fui-imgbox-row-wrap"> <div class="txt-box ">                                        </div> <div class="img-box img-box-row row-three"><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jld86oVw04VyYI9OAz6Krc5RbtWzWS18Qz.nwdQIf7*mZvCgZTP9yLztqt48fFyU6B30EBq58UQvghXkgivodo!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_0" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|0" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jld86oVw04VyYI9OAz6Krc5RbtWzWS18Qz.nwdQIf7*mZvCgZTP9yLztqt48fFyU6B30EBq58UQvghXkgivodo!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: -30.5px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jld86oVw04VyYI9OAz6Kre5RPb3pya730LVvpFsl1A4RhYhBCjtmBsMEIGXxTwZK2yr2oQZ1WmEQ7OjrXBRs2k!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_1" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|1" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(1)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jld86oVw04VyYI9OAz6Kre5RPb3pya730LVvpFsl1A4RhYhBCjtmBsMEIGXxTwZK2yr2oQZ1WmEQ7OjrXBRs2k!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" width="185" style="margin-top: -5.5px; margin-left: 0px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCaLxIf4mZf*vgLKjiOJUmZyHFm46TVmj2sUIs8rFAocvfodBf*fO902EPULha2Itjw!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_2" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|2" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(2)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCaLxIf4mZf*vgLKjiOJUmZyHFm46TVmj2sUIs8rFAocvfodBf*fO902EPULha2Itjw!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: -30.5px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCYW*GGNVopYNENUiL4DrQ6PscHBpEFGCEQMdcCAz9fcSiXn.A*k.5idic3XUMz09Zg!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_3" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|3" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(3)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCYW*GGNVopYNENUiL4DrQ6PscHBpEFGCEQMdcCAz9fcSiXn.A*k.5idic3XUMz09Zg!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: 0px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCZcgCjflgWahSdVtuGLrty4j8rHdFpm6IZfn*7HyH5tEV6EJexJMuJXMfSTyLOuptM!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_4" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|4" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(4)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCZcgCjflgWahSdVtuGLrty4j8rHdFpm6IZfn*7HyH5tEV6EJexJMuJXMfSTyLOuptM!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: -8px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCalM8rERGh7gHYjunBT3NLcRSHInuno.u7DGI3HC0nZV1x79yZJ7xpOgqNHN70OTds!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_5" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|5" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(5)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCalM8rERGh7gHYjunBT3NLcRSHInuno.u7DGI3HC0nZV1x79yZJ7xpOgqNHN70OTds!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" width="185" style="margin-top: -30.5px; margin-left: 0px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,http://m.qpic.cn/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5s2GbmXqoCwz6jvwfnE0mbsiYT77LpBTaqmAxTZ2iGdEmTocZp69dFv6*1kFOampq0VhwaOuwq6NF1.qmFo0hW8!/b" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_6" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|6" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(6)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5s2GbmXqoCwz6jvwfnE0mbsiYT77LpBTaqmAxTZ2iGdEmTocZp69dFv6*1kFOampq0VhwaOuwq6NF1.qmFo0hW8!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: 0px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,https://r.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5qBhWlogFMp0UQTMk7jUcBuU8b6P3l6fpGAD5RqQertLvQLjVf8TGomCbkNatkHcZDb4SFYewF.p970go2JEE64!/o" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_7" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|7" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(7)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5qBhWlogFMp0UQTMk7jUcBuU8b6P3l6fpGAD5RqQertLvQLjVf8TGomCbkNatkHcZDb4SFYewF.p970go2JEE64!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: 0px;"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792caee160c6f40b00__1" data-pickey="6f14b8792caee160c6f40b00,https://r.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5v4EwgX6GkOs4Y8piY9wz8ueNMAzuKuHkDIVc2oMccq2EmJA6a7zPhIWn5mo8TsRAsy2yw4Py1wxazw.C2rwoss!/o" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_9.pic_8" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792caee160c6f40b00|2042106991|8" data-src="/qzone/photo/zone/icenter_popup.html" data-width="0" data-height="0" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(8)" onload="QZFL.media.reduceImage(1,185,185,{trueSrc:&#39;http:\/\/a1.qpic.cn\/psc?\/V13t3ULa1pI7a0\/ruAMsa53pVQWN7FLK88i5v4EwgX6GkOs4Y8piY9wz8ueNMAzuKuHkDIVc2oMccq2EmJA6a7zPhIWn5mo8TsRAsy2yw4Py1wxazw.C2rwoss!\/c&amp;ek=1&amp;kp=1&amp;pt=0&amp;tl=1&amp;vuin=3271341746&amp;tm=1633312800&amp;sce=60-2-2&amp;rf=0-0&#39;,callback:function(img,type,ew,eh,o){var p=img.parentNode,_h = Math.floor(o.oh/o.k),_w = Math.floor(o.ow/o.k);img.style.marginTop=(eh-_h)/2+&#39;px&#39;;img.style.marginLeft=(ew-_w)/2+&#39;px&#39;;}})" height="185" style="margin-top: 0px; margin-left: 0px;"></a></div></div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">全自动搓脚机nova 7 (5G)</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="45" data-showcount="20" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8792caee160c6f40b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8792caee160c6f40b00" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b8792caee160c6f40b00|2042106991" data-clicklog="visitor">浏览754次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="45"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="45" data-showcount="45" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8792caee160c6f40b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8792caee160c6f40b00" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/2042106991" class="item q_namecard" target="_blank" link="nameCard_2042106991 des_2042106991">是芷绮鸭</a>、<a href="http://user.qzone.qq.com/2437865860" class="item q_namecard" target="_blank" link="nameCard_2437865860 des_2437865860">炭鉛混合物</a>、<a href="http://user.qzone.qq.com/205980884" class="item q_namecard" target="_blank" link="nameCard_205980884 des_205980884">蛊</a>、<a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/468837084" class="item q_namecard" target="_blank" link="nameCard_468837084 des_468837084">一口刘莲酥🥯</a>、<a href="http://user.qzone.qq.com/615234691" class="item q_namecard" target="_blank" link="nameCard_615234691 des_615234691">我想睡觉</a>、<a href="http://user.qzone.qq.com/634535866" class="item q_namecard" target="_blank" link="nameCard_634535866 des_634535866">不吃香菜</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/946244351" class="item q_namecard" target="_blank" link="nameCard_946244351 des_946244351">好想</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1344295827" class="item q_namecard" target="_blank" link="nameCard_1344295827 des_1344295827">逐我所愿ღ</a>、<a href="http://user.qzone.qq.com/1379339483" class="item q_namecard" target="_blank" link="nameCard_1379339483 des_1379339483">留白</a>、<a href="http://user.qzone.qq.com/1411289926" class="item q_namecard" target="_blank" link="nameCard_1411289926 des_1411289926">隐居者</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1483845420" class="item q_namecard" target="_blank" link="nameCard_1483845420 des_1483845420">一只小粉兔</a>、<a href="http://user.qzone.qq.com/1518914710" class="item q_namecard" target="_blank" link="nameCard_1518914710 des_1518914710">明天和麻烦谁会先来？</a>、<a href="http://user.qzone.qq.com/1623968156" class="item q_namecard" target="_blank" link="nameCard_1623968156 des_1623968156">雨幕</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2134244363" class="item q_namecard" target="_blank" link="nameCard_2134244363 des_2134244363">˗ˋˏ♡ˎˊ˗</a>等<span class="f-like-cnt">45</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8792caee160c6f40b00&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633312316_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state"> 09:51</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633312316_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b8793c5e5a61f6940b00" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">谢谢 刀傻了</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633312316_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b8793c5e5a61f6940b00" data-tid="6f14b8793c5e5a61f6940b00" data-uin="2042106991" data-origfkey="" data-origtid="6f14b8793c5e5a61f6940b00" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiIIT/Usa61bg!zBKlGILHxf/sbpk93xxkc2so!kWj76mmNClhKfrWe8xTki44xX4D0wT/Usa61bg!zBKlGILHxf/mngIJvkYOhXWgjcZZLkidW7MovYbk3IJyRR9qzp2sbEWN7lfMahyJvFyx3rIrF5mfdCVlwTnrwrMzAkbzg1AwJUufsrcYnFN12hDjRLASh6_" data-topicid="2042106991_6f14b8793c5e5a61f6940b00__1" data-feedstype="100" data-abstime="1633312316" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg  "> <div class="txt-box ">                                        </div> <div class="img-box "><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8793c5e5a61f6940b00__1" data-pickey="6f14b8793c5e5a61f6940b00,http://phototj.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5tNMwIQ4LZrB6ibe*wtwiZlB9cihq5F5jbRNtiE44LDzxjGrTtIRCfTyPROwjLvi2oBeHlum0oCtprjlxRdLzno!/b&amp;bo=YAk4BGAJOAQRECc!" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_1.pic_0" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8793c5e5a61f6940b00|2042106991|0" data-src="/qzone/photo/zone/icenter_popup.html" data-width="2400" data-height="1080" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(9)" style="height:252px;width:560px;"></a></div></div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="6" data-showcount="5" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8793c5e5a61f6940b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8793c5e5a61f6940b00" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b8793c5e5a61f6940b00|2042106991" data-clicklog="visitor">浏览9次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="6"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="6" data-showcount="6" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8793c5e5a61f6940b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8793c5e5a61f6940b00" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/468837084" class="item q_namecard" target="_blank" link="nameCard_468837084 des_468837084">一口刘莲酥🥯</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2231917129" class="item q_namecard" target="_blank" link="nameCard_2231917129 des_2231917129">小吴困了～</a>、<a href="http://user.qzone.qq.com/3159938350" class="item q_namecard" target="_blank" link="nameCard_3159938350 des_3159938350">✘</a>等<span class="f-like-cnt">6</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8793c5e5a61f6940b00&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                   <li class="f-single f-s-s" id="fct_2042106991_311_0_1633271291_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">昨天 22:28</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633271291_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b879fcbd596149db0100" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">你可知我霜雪催，也可与我共一醉。</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633271291_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b879fcbd596149db0100" data-tid="6f14b879fcbd596149db0100" data-uin="2042106991" data-origfkey="" data-origtid="6f14b879fcbd596149db0100" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiIIXEsXXdxoiUYSlrWE0zj88IZdmqXGV!67so!kWj76mmNClhKfrWe8xTki44xX4D0wXEsXXdxoiUYSlrWE0zj88Om!hsnnjg9HWgjcZZLkidWq/TIJKrc/9CRR9qzp2sbEWN7lfMahyJuwkCSaV3lIwdKH5w8oboiBMzAkbzg1AwKPOc4vB/4agT47MwB6sBIX_" data-topicid="2042106991_6f14b879fcbd596149db0100__1" data-feedstype="100" data-abstime="1633271291" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg   fui-imgbox-row-wrap"> <div class="txt-box ">                                        </div> <div class="img-box img-box-row row-two"><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b879fcbd596149db0100__1" data-pickey="6f14b879fcbd596149db0100,http://phototj.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5qBhWlogFMp0UQTMk7jUcBtLw35KHFVTL0x.O.AZofduPqnR9qM6w7dMmync7DS5KLkyN4OjzgujWSZ6O.j9n*c!/b&amp;bo=QAZABkAGQAYRECc!" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_2.pic_0" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b879fcbd596149db0100|2042106991|0" data-src="/qzone/photo/zone/icenter_popup.html" data-width="1600" data-height="1600" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(10)" style="margin-left:0px;margin-top:0px;height:279px;width:279px;" height="224"></a><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b879fcbd596149db0100__1" data-pickey="6f14b879fcbd596149db0100,http://phototj.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5qBhWlogFMp0UQTMk7jUcBua7IifinhyV5vmPvdM*r*dpsPGGzJGx5q06lC0P.GAdU.CORcBpZDPF7.0oa4GnlE!/b&amp;bo=QAZABkAGQAYRECc!" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_2.pic_1" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b879fcbd596149db0100|2042106991|1" data-src="/qzone/photo/zone/icenter_popup.html" data-width="1600" data-height="1600" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(11)" style="margin-left:0px;margin-top:0px;height:279px;width:279px;" height="224"></a></div></div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="20" data-showcount="19" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879fcbd596149db0100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879fcbd596149db0100" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b879fcbd596149db0100|2042106991" data-clicklog="visitor">浏览62次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="20"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="20" data-showcount="20" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879fcbd596149db0100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879fcbd596149db0100" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/2677567304" class="item q_namecard" target="_blank" link="nameCard_2677567304 des_2677567304">张斯美</a>、<a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/621031916" class="item q_namecard" target="_blank" link="nameCard_621031916 des_621031916">湮灭于沉寂</a>、<a href="http://user.qzone.qq.com/959650285" class="item q_namecard" target="_blank" link="nameCard_959650285 des_959650285">纵容</a>、<a href="http://user.qzone.qq.com/1007093604" class="item q_namecard" target="_blank" link="nameCard_1007093604 des_1007093604">云端弥漫了雾</a>、<a href="http://user.qzone.qq.com/1194129868" class="item q_namecard" target="_blank" link="nameCard_1194129868 des_1194129868">经济基础</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1518914710" class="item q_namecard" target="_blank" link="nameCard_1518914710 des_1518914710">明天和麻烦谁会先来？</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2231917129" class="item q_namecard" target="_blank" link="nameCard_2231917129 des_2231917129">小吴困了～</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/2728808480" class="item q_namecard" target="_blank" link="nameCard_2728808480 des_2728808480">吃螺蛳粉吗</a>、<a href="http://user.qzone.qq.com/3043862140" class="item q_namecard" target="_blank" link="nameCard_3043862140 des_3043862140">玫瑰島</a>、<a href="http://user.qzone.qq.com/3159938350" class="item q_namecard" target="_blank" link="nameCard_3159938350 des_3159938350">✘</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>、<a href="http://user.qzone.qq.com/3521204445" class="item q_namecard" target="_blank" link="nameCard_3521204445 des_3521204445"><img src="./e328076.gif" title="">格局小了</a>等<span class="f-like-cnt">20</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879fcbd596149db0100&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633249070_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">昨天 16:17</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633249070_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b8792467596137310e00" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">捏妈</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633249070_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b8792467596137310e00" data-tid="6f14b8792467596137310e00" data-uin="2042106991" data-origfkey="" data-origtid="6f14b8792467596137310e00" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiII2!g36u3IZ0aT6CdajkevyfIRqoYkz9dUso!kWj76mmNClhKfrWe8xTki44xX4D0w2!g36u3IZ0aT6CdajkevyYimQq6aiDyJWgjcZZLkidW!p8iVSHQbFSRR9qzp2sbEWN7lfMahyJsws4ojxX1vnXIeDzCurqxPMzAkbzg1AwJvxmZlcFKp9!87qP!elupt_" data-topicid="2042106991_6f14b8792467596137310e00__1" data-feedstype="100" data-abstime="1633249070" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg  "> <div class="txt-box ">                                        </div> <div class="img-box "><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b8792467596137310e00__1" data-pickey="6f14b8792467596137310e00,http://phototj.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5jNEcWWLfiyguA7n066JnCbTBEvlr4nz0d7IxqwWux08jZsIjtMaaavmZKYU1f3JfvHn7JyhbfzR1E42WGQtE*Q!/b&amp;bo=OARgCTgEYAkRECc!" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_1.pic_0" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b8792467596137310e00|2042106991|0" data-src="/qzone/photo/zone/icenter_popup.html" data-width="1080" data-height="2400" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(12)" style="height:420px;"></a></div></div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7 (5G)</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="22" data-showcount="20" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8792467596137310e00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8792467596137310e00" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b8792467596137310e00|2042106991" data-clicklog="visitor">浏览96次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="22"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="22" data-showcount="22" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8792467596137310e00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8792467596137310e00" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/1360087855" class="item q_namecard" target="_blank" link="nameCard_1360087855 des_1360087855">郝艺博</a>、<a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/621031916" class="item q_namecard" target="_blank" link="nameCard_621031916 des_621031916">湮灭于沉寂</a>、<a href="http://user.qzone.qq.com/857016041" class="item q_namecard" target="_blank" link="nameCard_857016041 des_857016041">ᝰꫛꪮꪮꫜ <img src="./e327769.gif" title=""></a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1194129868" class="item q_namecard" target="_blank" link="nameCard_1194129868 des_1194129868">经济基础</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2134244363" class="item q_namecard" target="_blank" link="nameCard_2134244363 des_2134244363">˗ˋˏ♡ˎˊ˗</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/2464258689" class="item q_namecard" target="_blank" link="nameCard_2464258689 des_2464258689">大奥·命</a>、<a href="http://user.qzone.qq.com/2510766053" class="item q_namecard" target="_blank" link="nameCard_2510766053 des_2510766053">梦里</a>、<a href="http://user.qzone.qq.com/2819611154" class="item q_namecard" target="_blank" link="nameCard_2819611154 des_2819611154">李圆圈er！</a>、<a href="http://user.qzone.qq.com/3159938350" class="item q_namecard" target="_blank" link="nameCard_3159938350 des_3159938350">✘</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>、<a href="http://user.qzone.qq.com/3371982811" class="item q_namecard" target="_blank" link="nameCard_3371982811 des_3371982811">你是人间理想.</a>等<span class="f-like-cnt">22</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="1" data-uin="1311906463" data-nick="梨花" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/1311906463" target="_blank"><img class="q_namecard" link="nameCard_1311906463 des_1311906463" alt="梨花" src="./30(1)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_1311906463" target="_blank" href="http://user.qzone.qq.com/1311906463">梨花</a>&nbsp; : 他一直这么勇的吗？<div class="comments-op"><span class=" ui-mr10 state">昨天 16:24</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8792467596137310e00&amp;t2_uin=1311906463&amp;t2_tid=1&amp;subdotype=55802&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div><div class="comments-list mod-comments-sub"><ul><li class="comments-item bor3" data-type="replyroot" data-tid="1" data-uin="2042106991" data-nick="是芷绮鸭" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/2042106991" target="_blank"><img class="q_namecard" link="nameCard_2042106991 des_2042106991" alt="是芷绮鸭" src="./30(2)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_2042106991" target="_blank" href="http://user.qzone.qq.com/2042106991">是芷绮鸭</a>&nbsp;回复<a class="nickname name c_tx q_namecard" link="nameCard_1311906463" target="_blank" href="http://user.qzone.qq.com/1311906463">梨花</a>&nbsp; : 是的<div class="comments-op"><span class=" ui-mr10 state">昨天 22:27</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8792467596137310e00&amp;t2_uin=1311906463&amp;t2_tid=1&amp;subdotype=55802&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8792467596137310e00&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633243576_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">昨天 14:46</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633243576_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b879b8515961075d0900" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">正确的借火方式（这次）：“姐姐可以借一下火吗？”然后礼貌的把打火机拿走自己点上再还给我<br>错误的借火方式（上次）：“小姐姐你能给我们点一下火吗”说着还把烟凑过来而且好几个人一起围上来真不知道是一群什么牛马<img src="./e400827.gif" title=""><img src="./e400827.gif" title=""><img src="./e400827.gif" title=""></div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633243576_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b879b8515961075d0900" data-tid="6f14b879b8515961075d0900" data-uin="2042106991" data-origfkey="" data-origtid="6f14b879b8515961075d0900" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="gDfY95IfLU8uCcuphX94eJuy1WY1fiIISabExGc4NVKtyY8l0ZHyXo/OJNmRHHJdyp2EJNENVrZ5ykeaJqSpzuKK/a9sq/9u1EVQjcBqIwxL0oZZRUBOvPl/gkTd9lJ5fIrbwP17NMinndfZfruNkzf8sGJeg5a2WkSegHxwvQGLeHKOVrrR2y10jnTWv9nvrwSVCqchMa3cN7KD4Nrs4bxB/gkkJOKO_" data-topicid="2042106991_6f14b879b8515961075d0900__1" data-feedstype="100" data-abstime="1633243576" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7 (5G)</a>&nbsp;</span>        </p>                            </div>    </div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="26" data-showcount="20" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879b8515961075d0900" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879b8515961075d0900" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b879b8515961075d0900|2042106991" data-clicklog="visitor">浏览65次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="26"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="26" data-showcount="26" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879b8515961075d0900" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879b8515961075d0900" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/428491798" class="item q_namecard" target="_blank" link="nameCard_428491798 des_428491798">睡觉</a>、<a href="http://user.qzone.qq.com/621031916" class="item q_namecard" target="_blank" link="nameCard_621031916 des_621031916">湮灭于沉寂</a>、<a href="http://user.qzone.qq.com/634535866" class="item q_namecard" target="_blank" link="nameCard_634535866 des_634535866">不吃香菜</a>、<a href="http://user.qzone.qq.com/857016041" class="item q_namecard" target="_blank" link="nameCard_857016041 des_857016041">ᝰꫛꪮꪮꫜ <img src="./e327769.gif" title=""></a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1194129868" class="item q_namecard" target="_blank" link="nameCard_1194129868 des_1194129868">经济基础</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1478094559" class="item q_namecard" target="_blank" link="nameCard_1478094559 des_1478094559">是萧萧呐。</a>、<a href="http://user.qzone.qq.com/1518914710" class="item q_namecard" target="_blank" link="nameCard_1518914710 des_1518914710">明天和麻烦谁会先来？</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2134244363" class="item q_namecard" target="_blank" link="nameCard_2134244363 des_2134244363">˗ˋˏ♡ˎˊ˗</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/2399593541" class="item q_namecard" target="_blank" link="nameCard_2399593541 des_2399593541">花-</a>、<a href="http://user.qzone.qq.com/2819611154" class="item q_namecard" target="_blank" link="nameCard_2819611154 des_2819611154">李圆圈er！</a>、<a href="http://user.qzone.qq.com/3011316596" class="item q_namecard" target="_blank" link="nameCard_3011316596 des_3011316596">不买谷一年立省五万五</a>等<span class="f-like-cnt">26</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="1" data-uin="1311906463" data-nick="梨花" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/1311906463" target="_blank"><img class="q_namecard" link="nameCard_1311906463 des_1311906463" alt="梨花" src="./30(1)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_1311906463" target="_blank" href="http://user.qzone.qq.com/1311906463">梨花</a>&nbsp; : 这也是抽烟的危害之一呀<div class="comments-op"><span class=" ui-mr10 state">昨天 15:05</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879b8515961075d0900&amp;t2_uin=1311906463&amp;t2_tid=1&amp;subdotype=55702&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879b8515961075d0900&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                             <li class="f-single f-s-s" id="fct_2042106991_311_5_1633228912_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">昨天 10:41</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_5_1633228912_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b8797018596103cd0800" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="qz_summary wupfeed" id="hex_2042106991_311_5_1633228912_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b8797018596103cd0800" data-tid="6f14b8797018596103cd0800" data-uin="2042106991" data-origfkey="" data-origtid="5312fe1ccd4f576197a80600" data-origuin="486412883" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="AYI6eycxCicuCcuphX94eJuy1WY1fiIIAHOWOhyULgXKFrqhscEsJ3Okl4KTYs7Cso!kWj76mmNClhKfrWe8xTki44xX4D0wAHOWOhyULgXKFrqhscEsJ!oc2yl0AiXMWgjcZZLkidWtS3zft2ra6S4Jy6mFf3h43jippzhSmHmQkpu3zKGUz9tmnNAJffPnd0UNoFStYAkxqc4VXWYo9mbbUyl/3bMdCGnCiPU9e!i91u5MyQeKxo8p6eSgnDvyPkjwG1!xw98wtnZLvqFe7c1JlBhR1h1V_" data-topicid="2042106991_6f14b8797018596103cd0800__1" data-feedstype="100" data-abstime="1633228912" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg  fui-txtimg fui-txtimg-bg "> <div class="txt-box ">                                       <a class="nickname name c_tx  q_namecard" link="nameCard_486412883" target="_blank" href="http://user.qzone.qq.com/486412883">超度</a>&nbsp;<span class=" state">：</span>除了想操哭你其余的日子不想看你掉眼泪 ​​​ </div> </div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7 (5G)</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail "><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="17" data-showcount="0" data-unikey="http://user.qzone.qq.com/486412883/mood/5312fe1ccd4f576197a80600" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8797018596103cd0800" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b8797018596103cd0800|2042106991" data-clicklog="visitor">浏览16次</a></div>        <div class="f-like-list f-like _likeInfo" likeinfo="17"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="17" data-showcount="17" data-unikey="http://user.qzone.qq.com/486412883/mood/5312fe1ccd4f576197a80600" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8797018596103cd0800" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><span class="f-like-cnt">17人觉得很赞</span></div></div><div class="mod-comments" style="padding:0"><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8797018596103cd0800&amp;signin=&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633228869_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">昨天 10:41</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633228869_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b87945185961837f0b00" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">草 看了一上午鱿鱼游戏 刚想起来我好像是有对象来着（雾）</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633228869_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b87945185961837f0b00" data-tid="6f14b87945185961837f0b00" data-uin="2042106991" data-origfkey="" data-origtid="6f14b87945185961837f0b00" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="gDfY95IfLU8uCcuphX94eJuy1WY1fiIIBFcSa4LC2jEuuvz0cEgx78bpk93xxkc2yp2EJNENVrZ5ykeaJqSpzuKK/a9sq/9uHaxfltIeOA8NgrB0ESrJmVDCThYo7QRdfIrbwP17NMjUtRhX8lUfhjf8sGJeg5a2WkSegHxwvQE276zRtS2!fooFAA8IpVghrwSVCqchMa1M1uYzCuFX9pJ6Ba87oUTU_" data-topicid="2042106991_6f14b87945185961837f0b00__1" data-feedstype="100" data-abstime="1633228869" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7 (5G)</a>&nbsp;</span>        </p>                            </div>    </div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="17" data-showcount="17" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b87945185961837f0b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b87945185961837f0b00" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b87945185961837f0b00|2042106991" data-clicklog="visitor">浏览49次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="17"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="17" data-showcount="17" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b87945185961837f0b00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b87945185961837f0b00" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/428491798" class="item q_namecard" target="_blank" link="nameCard_428491798 des_428491798">睡觉</a>、<a href="http://user.qzone.qq.com/468837084" class="item q_namecard" target="_blank" link="nameCard_468837084 des_468837084">一口刘莲酥🥯</a>、<a href="http://user.qzone.qq.com/621031916" class="item q_namecard" target="_blank" link="nameCard_621031916 des_621031916">湮灭于沉寂</a>、<a href="http://user.qzone.qq.com/634535866" class="item q_namecard" target="_blank" link="nameCard_634535866 des_634535866">不吃香菜</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1007093604" class="item q_namecard" target="_blank" link="nameCard_1007093604 des_1007093604">云端弥漫了雾</a>、<a href="http://user.qzone.qq.com/1194129868" class="item q_namecard" target="_blank" link="nameCard_1194129868 des_1194129868">经济基础</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/2819611154" class="item q_namecard" target="_blank" link="nameCard_2819611154 des_2819611154">李圆圈er！</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>共<span class="f-like-cnt">17</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="1" data-uin="1311906463" data-nick="梨花" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/1311906463" target="_blank"><img class="q_namecard" link="nameCard_1311906463 des_1311906463" alt="梨花" src="./30(1)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_1311906463" target="_blank" href="http://user.qzone.qq.com/1311906463">梨花</a>&nbsp; : 对象？自己玩去吧<div class="comments-op"><span class=" ui-mr10 state">昨天 11:52</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b87945185961837f0b00&amp;t2_uin=1311906463&amp;t2_tid=1&amp;subdotype=55702&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b87945185961837f0b00&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633182336_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">前天 21:45</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633182336_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b879806258613cbb0300" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">我好爱你。我要死了。</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633182336_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b879806258613cbb0300" data-tid="6f14b879806258613cbb0300" data-uin="2042106991" data-origfkey="" data-origtid="6f14b879806258613cbb0300" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiIImoEs9!nNAC!rvRe!9OshacNNjtNqQpxnso!kWj76mmNClhKfrWe8xTki44xX4D0wmoEs9!nNAC!rvRe!9OshaVbXGHcHjJSNWgjcZZLkidUlfzdPtieq7iRR9qzp2sbEWN7lfMahyJv023fPk6/1RPh2NGaPjA3bMzAkbzg1AwJcHoOCmH25OglGvRBr4RZo_" data-topicid="2042106991_6f14b879806258613cbb0300__1" data-feedstype="100" data-abstime="1633182336" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="18" data-showcount="17" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879806258613cbb0300" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879806258613cbb0300" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b879806258613cbb0300|2042106991" data-clicklog="visitor">浏览49次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="18"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="18" data-showcount="18" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879806258613cbb0300" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879806258613cbb0300" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/428491798" class="item q_namecard" target="_blank" link="nameCard_428491798 des_428491798">睡觉</a>、<a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1478094559" class="item q_namecard" target="_blank" link="nameCard_1478094559 des_1478094559">是萧萧呐。</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2231917129" class="item q_namecard" target="_blank" link="nameCard_2231917129 des_2231917129">小吴困了～</a>、<a href="http://user.qzone.qq.com/2378045065" class="item q_namecard" target="_blank" link="nameCard_2378045065 des_2378045065">岛野云川.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/3011316596" class="item q_namecard" target="_blank" link="nameCard_3011316596 des_3011316596">不买谷一年立省五万五</a>、<a href="http://user.qzone.qq.com/3043862140" class="item q_namecard" target="_blank" link="nameCard_3043862140 des_3043862140">玫瑰島</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>、<a href="http://user.qzone.qq.com/3521204445" class="item q_namecard" target="_blank" link="nameCard_3521204445 des_3521204445"><img src="./e328076.gif" title="">格局小了</a>等<span class="f-like-cnt">18</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="1" data-uin="1770846451" data-nick="与心爱的你行至世界尽头" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/1770846451" target="_blank"><img class="q_namecard" link="nameCard_1770846451 des_1770846451" alt="与心爱的你行至世界尽头" src="./30(3)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_1770846451" target="_blank" href="http://user.qzone.qq.com/1770846451">与心爱的你行至世界尽头</a>&nbsp; : 爱可以，但不能死<div class="comments-op"><span class=" ui-mr10 state">前天 21:46</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879806258613cbb0300&amp;t2_uin=1770846451&amp;t2_tid=1&amp;subdotype=55802&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div><div class="comments-list mod-comments-sub"><ul><li class="comments-item bor3" data-type="replyroot" data-tid="1" data-uin="2042106991" data-nick="是芷绮鸭" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/2042106991" target="_blank"><img class="q_namecard" link="nameCard_2042106991 des_2042106991" alt="是芷绮鸭" src="./30(2)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_2042106991" target="_blank" href="http://user.qzone.qq.com/2042106991">是芷绮鸭</a>&nbsp;回复<a class="nickname name c_tx q_namecard" link="nameCard_1770846451" target="_blank" href="http://user.qzone.qq.com/1770846451">与心爱的你行至世界尽头</a>&nbsp; : 那我就一直爱你<div class="comments-op"><span class=" ui-mr10 state">前天 21:55</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879806258613cbb0300&amp;t2_uin=1770846451&amp;t2_tid=1&amp;subdotype=55802&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879806258613cbb0300&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633182322_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">前天 21:45</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633182322_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b87972625861b8d40100" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">永远陪着我好不好。</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633182322_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b87972625861b8d40100" data-tid="6f14b87972625861b8d40100" data-uin="2042106991" data-origfkey="" data-origtid="6f14b87972625861b8d40100" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiIIdHFBIHfrcGuKOeaoxlApC4ZdmqXGV!67LVbrr7i23/mv0qz7oyyzhtz5NE8!Y/VrdHFBIHfrcGuKOeaoxlApC!m!hsnnjg9HWgjcZZLkidWygtJWQ9CNeSRR9qzp2sbEWN7lfMahyJs2KAP2!szSKTvDi7CKeXkEMzAkbzg1AwLhKwXAsDK5nnSdbNsvvk2m_" data-topicid="2042106991_6f14b87972625861b8d40100__1" data-feedstype="100" data-abstime="1633182322" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="15" data-showcount="15" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b87972625861b8d40100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b87972625861b8d40100" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b87972625861b8d40100|2042106991" data-clicklog="visitor">浏览33次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="15"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="15" data-showcount="15" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b87972625861b8d40100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b87972625861b8d40100" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/428491798" class="item q_namecard" target="_blank" link="nameCard_428491798 des_428491798">睡觉</a>、<a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2199548965" class="item q_namecard" target="_blank" link="nameCard_2199548965 des_2199548965">Mc小小诺</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2231917129" class="item q_namecard" target="_blank" link="nameCard_2231917129 des_2231917129">小吴困了～</a>、<a href="http://user.qzone.qq.com/2378045065" class="item q_namecard" target="_blank" link="nameCard_2378045065 des_2378045065">岛野云川.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/3011316596" class="item q_namecard" target="_blank" link="nameCard_3011316596 des_3011316596">不买谷一年立省五万五</a>、<a href="http://user.qzone.qq.com/3043862140" class="item q_namecard" target="_blank" link="nameCard_3043862140 des_3043862140">玫瑰島</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>共<span class="f-like-cnt">15</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="1" data-uin="1770846451" data-nick="与心爱的你行至世界尽头" data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/1770846451" target="_blank"><img class="q_namecard" link="nameCard_1770846451 des_1770846451" alt="与心爱的你行至世界尽头" src="./30(3)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_1770846451" target="_blank" href="http://user.qzone.qq.com/1770846451">与心爱的你行至世界尽头</a>&nbsp; : 好<div class="comments-op"><span class=" ui-mr10 state">前天 21:45</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b87972625861b8d40100&amp;t2_uin=1770846451&amp;t2_tid=1&amp;subdotype=55702&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b87972625861b8d40100&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633181774_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">前天 21:36</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633181774_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b8794e6058613b6c0e00" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="f-info">他在我怀里的那一刻，我不知道他是真的因为喜欢我而哭泣还是暗自窃喜我的天真。<br>可至少那一刻。<br>我想，我是相信他的。<br>重蹈覆辙也好。</div><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633181774_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b8794e6058613b6c0e00" data-tid="6f14b8794e6058613b6c0e00" data-uin="2042106991" data-origfkey="" data-origtid="6f14b8794e6058613b6c0e00" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiII9c8oWnFXxiCnAe8eDLV!KvIRqoYkz9dUa1fh26U!kKje2JvDmqxigKu7hl7IfaTs9c8oWnFXxiCnAe8eDLV!KoimQq6aiDyJWgjcZZLkidXr0HX3wVYhpyRR9qzp2sbEWN7lfMahyJvACKU9/BxUY06Dw6jnJI8bMzAkbzg1AwJSSmuIDiY30Yc0Sm0MAoHf_" data-topicid="2042106991_6f14b8794e6058613b6c0e00__1" data-feedstype="100" data-abstime="1633181774" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="16" data-showcount="16" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8794e6058613b6c0e00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8794e6058613b6c0e00" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b8794e6058613b6c0e00|2042106991" data-clicklog="visitor">浏览44次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="16"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="16" data-showcount="16" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b8794e6058613b6c0e00" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b8794e6058613b6c0e00" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/429360285" class="item q_namecard" target="_blank" link="nameCard_429360285 des_429360285">airplane mode</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1194129868" class="item q_namecard" target="_blank" link="nameCard_1194129868 des_1194129868">经济基础</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1464385264" class="item q_namecard" target="_blank" link="nameCard_1464385264 des_1464385264">成大事</a>、<a href="http://user.qzone.qq.com/1478094559" class="item q_namecard" target="_blank" link="nameCard_1478094559 des_1478094559">是萧萧呐。</a>、<a href="http://user.qzone.qq.com/1726958111" class="item q_namecard" target="_blank" link="nameCard_1726958111 des_1726958111">然</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2217764824" class="item q_namecard" target="_blank" link="nameCard_2217764824 des_2217764824">Pluto.</a>、<a href="http://user.qzone.qq.com/2378045065" class="item q_namecard" target="_blank" link="nameCard_2378045065 des_2378045065">岛野云川.</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/3011316596" class="item q_namecard" target="_blank" link="nameCard_3011316596 des_3011316596">不买谷一年立省五万五</a>、<a href="http://user.qzone.qq.com/3043862140" class="item q_namecard" target="_blank" link="nameCard_3043862140 des_3043862140">玫瑰島</a>、<a href="http://user.qzone.qq.com/3091991831" class="item q_namecard" target="_blank" link="nameCard_3091991831 des_3091991831">三茶</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>共<span class="f-like-cnt">16</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="comments-list "><ul><li class="comments-item bor3" data-type="commentroot" data-tid="2" data-uin="2378045065" data-nick="岛野云川." data-who="1"><div class="comments-item-bd"><div class="single-reply"><div class="ui-avatar"><a href="http://user.qzone.qq.com/2378045065" target="_blank"><img class="q_namecard" link="nameCard_2378045065 des_2378045065" alt="岛野云川." src="./30(4)"></a></div><div class="comments-content"><a class="nickname name c_tx q_namecard" link="nameCard_2378045065" target="_blank" href="http://user.qzone.qq.com/2378045065">岛野云川.</a>&nbsp; : 信我吧  我听话一百倍<div class="comments-op"><span class=" ui-mr10 state">前天 22:36</span><a class="act-reply none" href="javascript:;" data-cmd="qz_reply" data-version="6.4" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8794e6058613b6c0e00&amp;t2_uin=2378045065&amp;t2_tid=2&amp;subdotype=55702&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-tuin="" data-config="1|1|1|0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick"><b class="hide-clip">回复</b></a></div></div></div></div></li></ul></div><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b8794e6058613b6c0e00&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li>                                                                                                                                                                 <li class="f-single f-s-s" id="fct_2042106991_311_0_1633093608_0_1"><div class="f-single-head f-aside"><div class="f-adorn-top"></div>    <div class="user-pto"><a href="http://user.qzone.qq.com/2042106991" target="_blank" class="user-avatar q_namecard f-s-a" link="nameCard_2042106991" data-clicklog="avatar"><img src="./50"></a></div><div class="user-op"><a href="javascript:;" class="arrow-down" data-cmd="qz_opr_more" data-moreoperate="1"><i class="fui-icon icon-arrow-down"></i></a>        </div><div class="user-info"><div class="f-nick"><a target="_blank" href="http://user.qzone.qq.com/2042106991" data-clicklog="nick" class="f-name q_namecard " link="nameCard_2042106991">是芷绮鸭</a>  </div><div class="info-detail"><span class=" ui-mr8 state">10月1日 21:06</span><a href="javascript:;" data-cmd="qz_sign" class="f-sign-show state" title="我也要设置"></a></div></div></div><div class="f-single-content f-wrap"><div class="f-item f-s-i" id="feed_2042106991_311_0_1633093608_0_1" data-feedsflag="" data-iswupfeed="1" data-key="6f14b879e907576121730100" data-specialtype="" data-extend-info="0_0_0_0_0_0_0|08109c80060ec001|1040040060e41804" data-functype="" data-hasfollowed="1"><div class="qz_summary wupfeed" id="hex_2042106991_311_0_1633093608_0_1"><i class="none" name="feed_data" data-bitmap="08109c80060ec001" data-yybitmap="1040040060e41804" data-vipstarbitmap="2100000578002800" data-fkey="6f14b879e907576121730100" data-tid="6f14b879e907576121730100" data-uin="2042106991" data-origfkey="" data-origtid="6f14b879e907576121730100" data-origuin="2042106991" data-subid="" data-totweet="" data-issignin="" data-source="" data-retweetcount="0" data-stat="exNDgYmCtvguCcuphX94eJuy1WY1fiIIPxgQ2KnHEpUMk0H8OvvA64ZdmqXGV!67so!kWj76mmNClhKfrWe8xTki44xX4D0wPxgQ2KnHEpUMk0H8OvvA6!m!hsnnjg9HWgjcZZLkidVFDc2PNaKBEyRR9qzp2sbEWN7lfMahyJuISY/fnhXqYTxgpZFvFQTpMzAkbzg1AwLOdcxuGDWD3OS5LCLnhZhI_" data-topicid="2042106991_6f14b879e907576121730100__1" data-feedstype="100" data-abstime="1633093608" data-iswupfeed="1" data-platformid="52" data-accessright="1"></i><div class="f-ct "><div class="f-ct-txtimg fui-txtimg  "> <div class="txt-box ">                                        </div> <div class="img-box "><a class="img-item  " data-cmd="qz_popup" href="https://user.qzone.qq.com/2042106991/311/" data-topicid="2042106991_6f14b879e907576121730100__1" data-pickey="6f14b879e907576121730100,http://phototj.photo.store.qq.com/psc?/V13t3ULa1pI7a0/ruAMsa53pVQWN7FLK88i5iOzdxf3VFByjJUmTvJ2du17c*IImcKoP09dudede*vFPG1dIDkZeorYEeUVedePVdGFPv5bnB7wllg5.BEbGIk!/b&amp;bo=CAQuCQgELgkDEDU!" data-clicklog="pic" data-originurl="||" hotclickpath="0_appid_311_v8.pic_count_1.pic_0" hotdomain="icv6act.qzone.qq.com" data-weishi_feedid="" data-version="2" data-param="6f14b879e907576121730100|2042106991|0" data-src="/qzone/photo/zone/icenter_popup.html" data-width="1032" data-height="2350" data-type="popup" data-title="" data-config="" data-extendinfo1="" data-extendinfo2="" data-extendinfo3="" data-extendinfo4="" data-extendinfo11=""><img src="./psc(13)" style="height:420px;"></a></div></div><div class="f-reprint">        <p class="item">        <i class="fui-icon icon-print-phone"></i><span class="ui-mr8 state">来自&nbsp;<a href="http://z.qzone.com/?from=androidgrzxpl" target="_blank" class=" phone-style state">nova 7</a>&nbsp;</span>        </p>                            </div>    </div></div></div></div><div class="f-single-foot"><div class="f-op-detail f-detail content-line"><p class="op-list"><a class="item qz_retweet_btn " href="javascript:;" data-cmd="qz_popup" data-version="4" data-isnewtype="1" data-type="ForwardingBox" data-src="/qzone/app/controls/forwardingBox/forwardingBoxFacade.js" data-clicklog="retweet"><i class="fui-icon icon-op-share"></i></a><span class="item-line"></span>&nbsp;<a href="javascript:;" data-version="6.3" data-cmd="qz_reply" data-link="1" data-clicklog="comment" class=" qz_btn_reply item "><i class="fui-icon icon-op-comment"></i></a>&nbsp;<span class="item-line"></span><a class="item qz_like_btn_v3 " data-islike="0" data-likecnt="19" data-showcount="19" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879e907576121730100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879e907576121730100" data-clicklog="like" href="javascript:;"><i class="fui-icon icon-op-praise"></i></a></p><a href="javascript:;" class="state qz_feed_plugin" data-role="Visitor" data-config="311|6f14b879e907576121730100|2042106991" data-clicklog="visitor">浏览78次</a></div>        <div class="f-ang-t"></div><div class="f-like-list f-like _likeInfo" likeinfo="19"><div class="icon-btn"><a href="javascript:;" data-islike="0" data-likecnt="19" data-showcount="19" data-unikey="http://user.qzone.qq.com/2042106991/mood/6f14b879e907576121730100" data-curkey="http://user.qzone.qq.com/2042106991/mood/6f14b879e907576121730100" data-clicklog="like" class="praise qz_like_prase"><i class="fui-icon icon-list-praise"></i></a><div class="bubble" style="display:none;"><div class="bd">+1</div><b class="arrow arrow-down"></b></div></div><div class="user-list"><a href="http://user.qzone.qq.com/2437865860" class="item q_namecard" target="_blank" link="nameCard_2437865860 des_2437865860">炭鉛混合物</a>、<a href="http://user.qzone.qq.com/2837699818" class="item q_namecard" target="_blank" link="nameCard_2837699818 des_2837699818">谢天茹</a>、<a href="http://user.qzone.qq.com/535581346" class="item q_namecard" target="_blank" link="nameCard_535581346 des_535581346">verte</a>、<a href="http://user.qzone.qq.com/621031916" class="item q_namecard" target="_blank" link="nameCard_621031916 des_621031916">湮灭于沉寂</a>、<a href="http://user.qzone.qq.com/943722129" class="item q_namecard" target="_blank" link="nameCard_943722129 des_943722129">杰洛特只爱昆特牌</a>、<a href="http://user.qzone.qq.com/946244351" class="item q_namecard" target="_blank" link="nameCard_946244351 des_946244351">好想</a>、<a href="http://user.qzone.qq.com/978607037" class="item q_namecard" target="_blank" link="nameCard_978607037 des_978607037">惊蛰</a>、<a href="http://user.qzone.qq.com/1007093604" class="item q_namecard" target="_blank" link="nameCard_1007093604 des_1007093604">云端弥漫了雾</a>、<a href="http://user.qzone.qq.com/1311906463" class="item q_namecard" target="_blank" link="nameCard_1311906463 des_1311906463">梨花</a>、<a href="http://user.qzone.qq.com/1424795614" class="item q_namecard" target="_blank" link="nameCard_1424795614 des_1424795614">转转-上门抢手机</a>、<a href="http://user.qzone.qq.com/1770846451" class="item q_namecard" target="_blank" link="nameCard_1770846451 des_1770846451">与心爱的你行至世界尽头</a>、<a href="http://user.qzone.qq.com/2134244363" class="item q_namecard" target="_blank" link="nameCard_2134244363 des_2134244363">˗ˋˏ♡ˎˊ˗</a>、<a href="http://user.qzone.qq.com/2236670255" class="item q_namecard" target="_blank" link="nameCard_2236670255 des_2236670255">换推比谁都快</a>、<a href="http://user.qzone.qq.com/2385147196" class="item q_namecard" target="_blank" link="nameCard_2385147196 des_2385147196">清明</a>、<a href="http://user.qzone.qq.com/3011316596" class="item q_namecard" target="_blank" link="nameCard_3011316596 des_3011316596">不买谷一年立省五万五</a>、<a href="http://user.qzone.qq.com/3159938350" class="item q_namecard" target="_blank" link="nameCard_3159938350 des_3159938350">✘</a>、<a href="http://user.qzone.qq.com/3354098812" class="item q_namecard" target="_blank" link="nameCard_3354098812 des_3354098812">珀.</a>、<a href="http://user.qzone.qq.com/3446754178" class="item q_namecard" target="_blank" link="nameCard_3446754178 des_3446754178">傻逼蝻人离我远点</a>、<a href="http://user.qzone.qq.com/3521204445" class="item q_namecard" target="_blank" link="nameCard_3521204445 des_3521204445"><img src="./e328076.gif" title="">格局小了</a>共<span class="f-like-cnt">19</span>人觉得很赞</div></div><div class="mod-comments" style="padding:0"><div class="mod-commnets-poster feedClickCmd comment_default_inputentry" data-cmd="qz_reply" data-version="6" data-action="http://taotao.qq.com/cgi-bin/emotion_cgi_re_feeds" data-param="t1_source=&amp;t1_uin=2042106991&amp;t1_tid=6f14b879e907576121730100&amp;signin=0&amp;sceneid=100" data-charset="utf-8" data-maxlength="" data-tuin="2042106991" data-config="1|1|1|1,b52,with_fwd,同时转发;0|1,taotaoact.qzone.qq.com,@InputReply|1,taotaoact.qzone.qq.com,@ClickReply|1,taotaoact.qzone.qq.com,commentPresentClick" data-tid=""><div class="comments-poster-bd comments-poster-default"><div class="comments-box" data-clicklog="comment"><div class="textinput textinput-default bor2" contenteditable="true" alt="replybtn" placeholder="评论"><a class="c_tx3" href="javascript:void(0);" alt="replybtn">评论</a></div><div class="mod-insert-img"><a href="javascript:;" data-cmd="qz_quick_upload_img" class="btn-insert-img bg"><i class="icon-camera-16"></i></a></div></div></div></div></div>    </div></li></ul>
+	</div>
+
+	<div class="check-more update-more bor" id="ICFeedsTipMsg" style="cursor: pointer;">
+		<p class="b-inline data_is_loading none">数据加载中，请稍候...</p>
+		
+			<p class="b-inline data_no_more none">没有更多动态</p>
+			<p class="b-inline data_btn_more"><b>查看更多动态</b></p>
+		
+	</div>
+
+	<div id="goProfileFeedsLink" style="display:none;" class="check-more update-more bor">
+		<a href="javascript:;" class="b-inline c_tx" onclick="QZONE.FP.toApp(&#39;/profile/feeds&#39;);return false;">更多动态信息</a>
+	</div>
+
+</div>
+
+<div id="GRZOPTParserContainer" style="display:none"></div>
+
+<script type="text/javascript">
+	var ver = top.g_V || {};
+	ver.qz = ver.qz || "_2.1.31";
+	ver.sea = ver.sea || "2.0.0";
+	ver.jq = ver.jq || "2.0.0";
+	ver.proto = window.location.protocol;
+	try{
+		ver.proto = top.g_cdn_proto || window.location.protocol;
+	}catch(err){
+
+	}
+	
+	document.write([
+		_jsBegin,ver.proto ,'//'+ g_sid + 'ac/qzone/qzfl/qzfl', ver.qz, ".js", _jsEnd,
+		_jsBegin,ver.proto ,'//'+ g_sid + 'ac/lib/seajs/sea-', ver.sea, ".js", _jsEnd,
+		_jsBegin,ver.proto ,'//'+ g_sid + 'qzone/v8/core/seajs_config.js', _jsEnd,
+		_jsBegin,window.location.protocol , '//tajs.qq.com/stats?sId=53225730', _jsEnd
+	].join(""));
+</script><script type="text/javascript" charset="utf-8" src="./qzfl_v8_2.1.65.js.下载"></script><script type="text/javascript" charset="utf-8" src="./sea-2.1.1.js.下载"></script><script type="text/javascript" charset="utf-8" src="./seajs_config.js.下载"></script><script type="text/javascript" charset="utf-8" src="https://tajs.qq.com/stats?sId=53225730"></script>
+<script type="text/javascript">
+setTimeout(function(){
+	var list = QZFF_M_img_ribr;
+	for(var i=list.length;i--;){
+		list[i].src = "/ac/b.gif?delay";
+	}
+}, 0);
+
+if (G_Param.DEFAULT_FEEDS_CGI.indexOf("feeds_ic_unaided_xml") > -1) {
+	G_Param.DEFAULT_FEEDS_CGI = window.location.protocol + "//" + g_rd + "/cgi-bin/feeds/feeds_html_act_all";
+}
+if (G_Param.DEFAULT_FEEDS_CGI.indexOf("feeds_ic_interactive_xml") > -1) {
+	G_Param.DEFAULT_FEEDS_CGI = window.location.protocol + "//" + g_rd + "/cgi-bin/feeds/feeds_html_interactive";
+}
+if(G_Param.hasGoProfileFeedsLink){
+	var d = document.getElementById("goProfileFeedsLink");
+	if(d){
+		d.style.display = "";
+	}
+} else {
+	document.getElementById("ICFeedsTipMsg").style.display = "";
+}
+
+document.write(([
+	_jsBegin,ver.proto ,'//'+g_sid+'qzone/v5/namecardv2.js',_jsEnd
+]).join(""));
+
+function waitClientLib(){
+	if (top.QZONE && top.QZONE.FrontPage){
+		seajs.use(ver.proto +'//'+g_sid+'ac/qzfl/appclientlib.js', onClientLibOK);
+	} else {
+		setTimeout(waitClientLib, 100);
+	}
+}
+waitClientLib();
+
+function onClientLibOK(){
+	seajs.use(['v8/engine/cpu', 'v8/ic/feeds', 'v8/ic/home_more_feeds', 'v8/ic/speed'], function(cpujs, Feeds, HomeMoreFeeds, speed){
+		cpujs.bootstrap();
+		this.cpujs = cpujs;/*暴露全局接口*/
+		/*初始化feeds*/
+		/*interface clientlib映射interface完成*/
+		Feeds.bootstrap({
+			sence:"home_personal",
+			feedsData:_feedsdata.data
+		});
+		/*启动拉取更多feeds的逻辑*/
+		HomeMoreFeeds.bootstrap();
+
+
+		var $body = $j("body");
+		function onOpacityChange(_, newOpacity){
+			var newOpacityClassName = "mode_bg_opacity" + newOpacity;
+			$body.removeClass("mode_bg_opacity" + $body.data("opacity")).addClass(newOpacityClassName).data("opacity", newOpacity);
+		}
+
+		function onStyleChange(evt, dataObj){
+			if (dataObj && dataObj.styleid){
+				var styleCssHref = window.location.protocol + '//' + g_sid + 'aoi/skin/' + dataObj.styleid + '.css';
+				$j("#qz_skin_style").attr("href", styleCssHref);
+			}
+		}
+
+		top.QZONE.qzEvent.addEventListener('QZ_CUSTOM_OPACITY_CHANGE', onOpacityChange);
+		top.QZONE.qzEvent.addEventListener('QZ_CUSTOM_CHANGE_STYLE', onStyleChange);
+		$j(window).bind("beforeunload", function(){
+			top.QZONE.qzEvent.removeEventListener('QZ_CUSTOM_CHANGE_OPACITY', onOpacityChange);
+			top.QZONE.qzEvent.removeEventListener('QZ_CUSTOM_CHANGE_STYLE', onStyleChange);
+		});
+
+		if (speed && speed.report) {
+			if (parent) {
+				var parentHref = parent.location.href,
+					pageName,
+					g_point0;
+				if (parentHref.indexOf('profile/index.html') > -1) {
+					pageName = 'profile';
+					g_point0 = top.window.g_point0_profile;
+				} else if(parentHref.indexOf('/main') > -1){
+					pageName = 'main';
+					g_point0 = top.window.g_NowTime * 1000;
+				} else {
+					return;
+				}
+
+				if (g_point0) {
+					speed.report({
+						points: {
+							siteName: top.location.host,
+							pageName: pageName,
+							24: Date.now() - g_point0
+						},
+				    	appid: "20141",
+						appkey: "c373ba4a1ce77b27601e887e9f8eb3f4"
+					});
+				}
+			}
+		}
+	});
+
+}
+function bodyonload(){
+	QZONE.namecard.init("host_home_feeds");
+}
+
+</script><script type="text/javascript" charset="utf-8" src="./namecardv2.js.下载"></script>
+
+
+<div style="display: none;"><div><div x:id="content_content" spellcheck="false" x:idprefix="content" class="textinput textarea c_tx2" contenteditable="true" accesskey="q" style="display:none;"></div><div x:id="substitutor_content" x:idprefix="substitutor" class="textinput textarea c_tx3" contenteditable="true" tabindex="0" accesskey="q"></div><div x:id="tips" class="mod_at_wrap" style="display:none;"><div class="mod_at bg bor2"><div class="mod_at_list"><div x:id="tips_content" class="mod_at_tips c_tx3 bg3">正在加载中...</div></div></div></div><div x:id="options"></div></div></div><div style="display: none;"></div></body></html>
